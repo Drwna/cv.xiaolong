@@ -8,7 +8,7 @@
 .dn { display: none; }
 
 body { background: #eee; margin: 20px 0; }
-a { font-size: inherit; color: #666; text-decoration: none; }
+a { font-size: inherit; color: #666; text-decoration: underline; }
 ol, ul {
   list-style: none;
   padding: 0;
@@ -100,7 +100,7 @@ strong {
     margin-bottom: 5px;
     background-color: rgba(105, 105, 105, 0.2);
     &::after {
-      content: '';
+      // content: '';
       position: absolute;
       display: inline-block;
       width: 100%;
@@ -139,12 +139,7 @@ strong {
 }
 
 
-a {
-  /* color: #999; */
-  /* color: #953;
-  text-decoration: none;
-  border-bottom: 1px solid; */
-}
+a { text-decoration: underline; }
 
 p, li { color: #050505; }
 

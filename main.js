@@ -23,7 +23,7 @@ const skills = Object.freeze([
   },
   {
     index: 3,
-    content: `掌握<strong> Vue（2/3）全家桶 </strong>的使用，包括 Vite/VueCli、VueRouter、Pinia/Vuex 等`,
+    content: `掌握<strong> Vue（2/3）全家桶 </strong>的使用，包括 Vite/VueCli、VueRouter、Pinia/Vuex 等。`,
   },
   {
     index: 4,
@@ -35,7 +35,7 @@ const skills = Object.freeze([
   },
   {
     index: 5,
-    content: `了解 <strong>TypeScript</strong> 的使用，熟悉 Typescript + Vue3 的开发。`,
+    content: `熟悉 <strong>TypeScript</strong> 的使用，熟悉 Typescript + Vue3 的开发。`,
   },
   {
     index: 6,

@@ -9,6 +9,9 @@
 
 body { background: #eee; margin: 20px 0; }
 a { font-size: inherit; color: #666; text-decoration: underline; }
+a:hover {
+  cursor: pointer;
+}
 ol, ul {
   list-style: none;
   padding: 0;
@@ -26,12 +29,12 @@ article {
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.2);
   display: flex;
   flex-flow: column;
-  gap: 10px;
+  // gap: 10px;
 }
 
 section {
   > h2 {
-    margin-top: 15px;
+    margin-top: 8px;
     margin-bottom: 10px;
     color: #050505;
     font-size: 18px;
@@ -307,7 +310,7 @@ h3, h4, h5, h6 { margin: 0; }
     list-style-position: inside;
     padding: 0;
     li {
-      margin-bottom: 24px;
+      margin-bottom: 6px;
       header {
         display: flex;
         justify-content: space-between;
@@ -320,7 +323,7 @@ h3, h4, h5, h6 { margin: 0; }
   // corporate 
   > div {
     > h3 {
-      padding: 6px 0 10px 0;
+      padding: 4px 0 6px 0;
       text-align: center;
     }
   }

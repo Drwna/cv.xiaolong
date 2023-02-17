@@ -1,12 +1,5 @@
 console.log('cv');
 
-const getDecode =(str) => {
-  // str to base64
-  const base64 = window.atob(str);
-  // base64 to utf8
-  const utf8 = window.decodeURIComponent(escape(base64));
-  return utf8;
-}
 
 const info = Object.freeze({
   name: '何晓龙',
@@ -34,7 +27,7 @@ const skills = Object.freeze([
   },
   {
     index: 4,
-    content: '熟悉 Uniapp + Vue2/Vue3 的开发',
+    content: '熟悉 <strong>Uniapp</strong> + Vue2/Vue3 的开发',
   },
   {
     index: 4,
@@ -55,9 +48,11 @@ const experience = Object.freeze([
     jobTitle: '前端开发工程师，上海',
     company: '上海阿特拓客数组科技有限公司，2022.3 ~ 至今',
     content: [
-      '开发维护 <a src="https://arttokyoglobal.com/">公司官网</a>，',
-      '参与项目初期 demo 产品需求分析，并根据设计稿实现前端页面 ',
+      '开发维护 <a src="https://arttokyoglobal.com/" target="_break">公司官网</a>（https://arttokyoglobal.com）。',
+      '和后端对接接口，开发维护艺术品管理后台页面。',
+      '参与项目初期原型产品需求分析，并根据设计稿实现前端页面。 ',
       '搭建 Vue3 + TypeScript + Vite 的项目框架。',
+      '使用 Uniapp + Vue3 开发项目原型。'
     ],
   },
 ]);
@@ -138,7 +133,7 @@ const projects = Object.freeze({
         '一个基于 <strong>Vue2 + Vue Router + TypeScript</strong> 的移动端单页面应用。',
         '开发中对同时存在很多重复的逻辑和页面，进行封装提炼相关组件，移除大量冗余代码。极大的提升了开发效率。',
         '将数据存在 <strong>localStorage</strong> 中，并引入 Vuex 来进行数据管理，对 Vuex 的单向流等概念有充分的了解。',
-        '熟悉了 Vue 结合 Typescript 开发，更多内容详见：<a src="https://drwna.github.io/2022/01/17/52/" target="_break">博客</a>'
+        '熟悉了 Vue 结合 Typescript 开发，更多内容详见：<a src="https://drwna.github.io/2022/01/17/52/" target="_break"> 博客 </a>。'
       ],
     },
     {

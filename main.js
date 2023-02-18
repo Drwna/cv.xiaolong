@@ -23,11 +23,11 @@ const skills = Object.freeze([
   },
   {
     index: 3,
-    content: `掌握<strong> Vue（2/3）全家桶 </strong>的使用，包括 Vite/VueCli、VueRouter、Pinia/Vuex 等。`,
+    content: `掌握<strong> Vue（2/3）全家桶 </strong>的使用，能够使用组件化开发思想构建高性能的Web应用。`,
   },
   {
     index: 4,
-    content: '掌握 <strong>Uniapp</strong> + Vue2/Vue3 的开发',
+    content: '熟悉 <strong>Uniapp</strong> 等跨平台开发技术，能够开发适配多种设备的 H5 页面',
   },
   {
     index: 5,
@@ -39,7 +39,7 @@ const skills = Object.freeze([
   },
   {
     index: 7,
-    content: `熟悉 <strong> Webpack 的配置和优化</strong>`,
+    content: `了解 <strong> Webpack 的配置和优化</strong>`,
   },
 ]);
 
@@ -48,7 +48,8 @@ const experience = Object.freeze([
     jobTitle: '前端开发工程师，上海',
     company: '上海阿特拓客数组科技有限公司，2022.3 ~ 至今',
     content: [
-      '开发维护 <a href="https://arttokyoglobal.com/" target="_break">公司官网</a>（https://arttokyoglobal.com）。',
+      '负责公司官网的前端开发和维护，使用 HTML/CSS/JavaScript/ 等技术实现页面布局、交互和动画效果。',
+      `<a href="https://arttokyoglobal.com/" target="_break">公司官网</a>（https://arttokyoglobal.com）。`,
       '和后端对接接口，开发维护艺术品管理后台页面。',
       '参与项目初期原型产品需求分析，并根据设计稿实现前端页面。 ',
       '搭建 Vue3 + TypeScript + Vite 的项目框架。',
@@ -66,9 +67,9 @@ const projects = Object.freeze({
       content: [
         // 'nft 电影宣传官网，基于 HTML5 + CSS4 + JavaScript',
         '整体使用现代 <strong>Flex</strong> 布局，使用原生 <strong>Javascript</strong> 实现, 无任何第三方库。使用了 <strong>CSS3 的动画</strong>和过渡效果，实现了页面的动态效果。',
-        '采用 <strong>rem<strong> 适配 pc 端，并适配移动端。',
+        '使用媒体查询和 <strong>rem</strong> 实现了响应式设计，适配不同尺寸的屏幕。',
         '使用 ajax 发送请求，并根据 css 类名实现了<strong>多语言切换</strong>，',
-        '手写了一个轮播图组件，实现了自动轮播、手动轮播、无缝轮播、轮播图切换动画等功能。',
+        '使用原生 JavaScript 实现了轮播图组件，实现了自动轮播、手动轮播、无缝轮播、轮播图切换动画等功能。',
         // '合理的使用了 HTML5 的语义化标签，提高了页面的可读性。',
         '拆分了页面的功能模块，使用了模块化的思想，提高了代码的可维护性。',
       ],
@@ -93,11 +94,23 @@ const projects = Object.freeze({
         'nft 移动端平台原型开发',
         '原型 1.0 使用 Vue2 相关技术开发。',
         '原型 2.0 使用 <strong>Vue3 + TypeScript + Vite</strong> 等技术栈。',
-        '使用 Vue3 的 <strong>Composition API</strong> 实现逻辑复用。',
+        '使用 Vue3 的 <strong>Composition API</strong> 组织代码逻辑，提高了代码可读性和复用性',
+        '使用 Typescript 进行类型检查，避免了潜在的错误和 bug。',
         '使用 <strong>rem</strong> 适配移动端。',
         '基于 VantUI 组件库，封装一些通用组件。',
       ],
     },
+    {
+      title: '移动端原型（H5 & App）',
+      preview: '',
+      source: '',
+      content: [
+        '使用 <strong>UniApp (vue3)</strong> 开发了一个兼容 H5 和 安卓App 的应用原型，实现了登录、注册等功能。',
+        '使用 UniApp 提供的 API 和组件，实现了跨平台兼容性，并优化了性能和体验',
+        '使用 <strong>Pinia</strong> 进行状态管理',
+        '实现了自定义底部 tabbar 和顶部导航栏'
+      ]
+    }
   ],
   personal: [
     {

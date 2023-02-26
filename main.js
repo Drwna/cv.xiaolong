@@ -1,15 +1,5 @@
 console.log('cv');
 
-const info = {
-  name: '何晓龙',
-  gender: '男',
-  age: '23 岁',
-  jobTitle: '前端开发工程师（1年）',
-  phone: '178 6427 0724',
-  email: '3417237276@qq.com',
-  address: '上海，宝山',
-};
-
 const skills = [
   {
     index: 1,
@@ -159,6 +149,16 @@ const projects = {
       ],
     },
   ],
+};
+
+const info = {
+  name: '何晓龙',
+  gender: '男',
+  age: '23 岁',
+  jobTitle: '前端开发工程师（1年）',
+  phone: window.atob('MTc4IDY0MjcgMDcyNA=='),
+  email: window.atob('MzQxNzIzNzI3NkBxcS5jb20='),
+  address: '上海，宝山',
 };
 
 const data = Object.freeze({

@@ -1,7 +1,6 @@
 console.log('cv');
 
-
-const info = Object.freeze({
+const info = {
   name: '何晓龙',
   gender: '男',
   age: '23 岁',
@@ -9,9 +8,9 @@ const info = Object.freeze({
   phone: '178 6427 0724',
   email: '3417237276@qq.com',
   address: '上海，宝山',
-});
+};
 
-const skills = Object.freeze([
+const skills = [
   {
     index: 1,
     content: `能够使用 HTML + CSS 还原设计稿，熟悉<strong> HTML5 </strong> 新属性以及语义化、掌握
@@ -41,9 +40,9 @@ const skills = Object.freeze([
     index: 7,
     content: `了解 <strong> Webpack 的配置和优化</strong>`,
   },
-]);
+];
 
-const experience = Object.freeze([
+const experience = [
   {
     jobTitle: '前端开发工程师，上海',
     company: '上海阿特拓客数组科技有限公司，2022.3 ~ 至今',
@@ -53,12 +52,12 @@ const experience = Object.freeze([
       '和后端对接接口，开发维护艺术品管理后台页面。',
       '参与项目初期原型产品需求分析，并根据设计稿实现前端页面。 ',
       '搭建 Vue3 + TypeScript + Vite 的项目框架。',
-      '使用 Uniapp + Vue3 开发项目原型。'
+      '使用 Uniapp + Vue3 开发项目原型。',
     ],
   },
-]);
+];
 
-const projects = Object.freeze({
+const projects = {
   company: [
     {
       title: 'nft 艺术品电影宣传官网（pc & mobile）',
@@ -108,9 +107,9 @@ const projects = Object.freeze({
         '使用 <strong>UniApp (vue3)</strong> 开发了一个兼容 H5 和 安卓App 的应用原型，实现了登录、注册等功能。',
         '使用 UniApp 提供的 API 和组件，实现了跨平台兼容性，并优化了性能和体验',
         '使用 <strong>Pinia</strong> 进行状态管理',
-        '实现了自定义底部 tabbar 和顶部导航栏'
-      ]
-    }
+        '实现了自定义底部 tabbar 和顶部导航栏',
+      ],
+    },
   ],
   personal: [
     {
@@ -129,7 +128,8 @@ const projects = Object.freeze({
       source: 'https://github.com/Drwna/bigScreen',
       content: [
         // '与<strong> Echart </strong>时，仿的开源项目做的。',
-        `本项目是仿照其它开源项目，完全自主实现的数据大屏可视化。`,
+        // `本项目是仿照其它开源项目，完全自主实现的数据大屏可视化。`,
+        `本项目是完全自主实现的数据大屏可视化。`,
         '使用 <strong>React + TypeScript + ECharts</strong> 等技术栈。',
         `页面布局使用了 <strong>Grid</strong> 和 <strong>Flex </strong> 布局， 使用 <strong> rem </strong> 动态记算适配不同尺寸的屏幕，具体思路见
                 <a href="https://draganet.gitee.io/2022/02/05/08/#%E9%80%82%E9%85%8D%E5%B1%8F%E5%B9%95" target="_break">博客</a>`,
@@ -146,7 +146,7 @@ const projects = Object.freeze({
         '一个基于 <strong>Vue2 + Vue Router + TypeScript</strong> 的移动端单页面应用。',
         '开发中对同时存在很多重复的逻辑和页面，进行封装提炼相关组件，移除大量冗余代码。极大的提升了开发效率。',
         '将数据存在 <strong>localStorage</strong> 中，并引入 Vuex 来进行数据管理，对 Vuex 的单向流等概念有充分的了解。',
-        '熟悉了 Vue 结合 Typescript 开发，更多内容详见：<a href="https://drwna.github.io/2022/01/17/52/" target="_break"> 博客 </a>。'
+        '熟悉了 Vue 结合 Typescript 开发，更多内容详见：<a href="https://drwna.github.io/2022/01/17/52/" target="_break"> 博客 </a>。',
       ],
     },
     {
@@ -159,15 +159,19 @@ const projects = Object.freeze({
       ],
     },
   ],
+};
+
+const data = Object.freeze({
+  ...info,
+  skills,
+  experience,
+  projects,
 });
 
 Vue.createApp({
   data() {
     return {
-      ...info,
-      skills,
-      experience,
-      projects,
+      ...data,
     };
   },
 }).mount('#app');

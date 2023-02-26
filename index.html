@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <article id="app">
+    <article id="app" class="gap-2">
       <section class="bio flex flex-col gap-4">
         <div class="flex items-center">
           <h1 class="">{{ name }}</h1>
@@ -122,6 +122,15 @@
         </p> -->
       </section>
 
+
+      <section class="others">
+        <h2>个人链接</h2>
+        <ul class="flex flex-col gap-1">
+          <li> <a href="http://draganet.gitee.io/" target="_break"><strong>我的博客</strong></a>，目前已有 40 多篇技术文章。 </li>
+          <li> <a href="http://github.com/drwna" target="_break"><strong>我的 GitHub</strong></a>，近一年有 500 多次提交。 </li>
+        </ul>
+      </section>
+
       <section class="skills">
         <h2>专业技能</h2>
         <div class="wrapper">
@@ -164,7 +173,7 @@
                   <a v-if="item.source" :href="item.source" target="_break">源码链接</a>
                 </div>
               </header>
-              <ul class="flex flex-col ml-2 list-disc" style="margin-left: 36px;">
+              <ul class="flex flex-col ml-2 list-decimal" style="margin-left: 36px;">
                 <li v-for="v in item.content">
                   <p v-html="v"></p>
                 </li>
@@ -186,7 +195,7 @@
                   <a v-if="item.source" :href="item.source" target="_break" class="shrink-0">源码链接</a>
                 </div>
               </header>
-              <ul class="flex flex-col ml-2 list-disc" style="margin-left: 36px;">
+              <ul class="flex flex-col ml-2 list-decimal" style="margin-left: 36px;">
                 <li v-for="(v, i) in item.content">
                   <p v-html="v"></p>
                 </li>
@@ -194,14 +203,6 @@
             </li>
           </ol>
         </div>
-      </section>
-
-      <section class="others">
-        <h2>其他链接</h2>
-        <ul class="flex flex-col gap-1">
-          <li> <a href="http://draganet.gitee.io/" target="_break"><strong>我的博客</strong></a>，目前已有 40 多篇技术文章。 </li>
-          <li> <a href="http://github.com/drwna" target="_break"><strong>我的 GitHub</strong></a>，近一年有 400 次提交。 </li>
-        </ul>
       </section>
 
       <section class="education">
